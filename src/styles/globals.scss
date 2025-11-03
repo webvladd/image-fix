@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #0c0f16;
+  color: #f7f8fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b2333, #0c0f16 60%);
+}
+
+main {
+  display: block;
+}
+
+.image-fix-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image-fix-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.image-fix-page__header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.image-fix-page__header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.image-fix-page__header p {
+  margin: 0;
+  color: #c7cede;
+}
+
+.image-fix-page__content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.image-fix-page__column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image-fix-page__column--left {
+  flex: 0 0 49%;
+}
+
+.image-fix-page__column--right {
+  flex: 0 0 49%;
+}
+
+@media (max-width: 1024px) {
+  .image-fix-page__content {
+    flex-direction: column;
+  }
+
+  .image-fix-page__column--left,
+  .image-fix-page__column--right {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}

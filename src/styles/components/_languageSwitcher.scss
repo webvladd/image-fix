@@ -1,0 +1,29 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 999px;
+  padding: 6px 12px;
+  border: 1px solid rgba(100, 116, 139, 0.4);
+}
+
+.language-switcher__label {
+  font-size: 0.9rem;
+  color: rgba(203, 213, 225, 0.85);
+}
+
+.language-switcher__select {
+  border: none;
+  background: transparent;
+  color: #f8fafc;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  padding-right: 8px;
+}
+
+.language-switcher__select:focus {
+  outline: none;
+}
